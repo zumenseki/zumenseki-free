@@ -82,8 +82,9 @@ const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
     // PDF.jsを動的にインポート
     const pdfjsLib = await import('pdfjs-dist')
     
-    // ワーカーの設定
-    pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`
+   // ワーカーの設定
+// CDNJSで利用可能なpdf.worker.min.jsのバージョンを直接指定
+pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.worker.min.js`
     
     const arrayBuffer = await file.arrayBuffer()
     const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise
