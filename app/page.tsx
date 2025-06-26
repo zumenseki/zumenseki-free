@@ -11,7 +11,12 @@ import UpgradePrompt from "@/components/UpgradePrompt"
 
 // PDF.js関連のインポート
 import * as pdfjsLib from 'pdfjs-dist'
-import 'pdfjs-dist/build/pdf.worker.entry'
+
+// PDF.jsワーカーの設定
+if (typeof window !== 'undefined') {
+  pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`
+}
+
 
 interface Point {
   x: number
