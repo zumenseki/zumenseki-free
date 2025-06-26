@@ -12,10 +12,8 @@ import UpgradePrompt from "@/components/UpgradePrompt"
 // PDF.js関連のインポート
 import * as pdfjsLib from 'pdfjs-dist'
 
-// PDF.jsワーカーの設定
-if (typeof window !== 'undefined') {
-  pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`
-}
+// PDF.jsワーカーの設定（useEffectで実行）
+
 
 
 interface Point {
@@ -233,6 +231,12 @@ export default function PDFAreaCalculator() {
   const deleteMeasurement = (id: string) => {
     setMeasurements(measurements.filter(m => m.id !== id))
   }
+// PDF.jsの初期化
+useEffect(() => {
+  if (typeof window !== 'undefined') {
+    pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`
+  }
+}, [])
 
   // PDFページが変更されたときの再レンダリング
   useEffect(() => {
