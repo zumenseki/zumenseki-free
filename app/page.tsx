@@ -9,8 +9,7 @@ import { Crown, Ruler, Square, Upload, Trash2, Download, Save, Sparkles } from "
 import UpgradeModal from "@/components/UpgradeModal-new"
 import UpgradePrompt from "@/components/UpgradePrompt"
 
-// PDF.js関連のインポート
-import * as pdfjsLib from 'pdfjs-dist'
+
 
 // PDF.jsワーカーの設定（useEffectで実行）
 
@@ -67,29 +66,34 @@ export default function PDFAreaCalculator() {
     setIsDrawing(true)
     setCurrentMeasurement([])
   }
+// ファイルアップロード処理
+const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
+  const file = event.target.files?.[0]
+  if (!file) return
 
-  // ファイルアップロード処理
-  const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
-    const file = event.target.files?.[0]
-    if (!file) return
-
-    // ファイルサイズチェック（無料版は5MB制限）
-    if (!isPremium && file.size > 5 * 1024 * 1024) {
-      setUpgradeReason('filesize')
-      setShowUpgradeModal(true)
-      return
-    }
-
-    try {
-      const arrayBuffer = await file.arrayBuffer()
-      const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise
-      setPdfDoc(pdf)
-      setCurrentPage(1)
-      renderPage(pdf, 1)
-    } catch (error) {
-      console.error('PDF読み込みエラー:', error)
-    }
+  // ファイルサイズチェック（無料版は5MB制限）
+  if (!isPremium && file.size > 5 * 1024 * 1024) {
+    setUpgradeReason('filesize')
+    setShowUpgradeModal(true)
+    return
   }
+
+  try {
+    // PDF.jsを動的にインポート
+    const pdfjsLib = await import('pdfjs-dist')
+    
+    // ワーカーの設定
+    pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`
+    
+    const arrayBuffer = await file.arrayBuffer()
+    const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise
+    setPdfDoc(pdf)
+    setCurrentPage(1)
+    renderPage(pdf, 1)
+  } catch (error) {
+    console.error('PDF読み込みエラー:', error)
+  }
+}
 
   // PDFページのレンダリング
   const renderPage = async (pdf: any, pageNum: number) => {
@@ -231,12 +235,6 @@ export default function PDFAreaCalculator() {
   const deleteMeasurement = (id: string) => {
     setMeasurements(measurements.filter(m => m.id !== id))
   }
-// PDF.jsの初期化
-useEffect(() => {
-  if (typeof window !== 'undefined') {
-    pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`
-  }
-}, [])
 
   // PDFページが変更されたときの再レンダリング
   useEffect(() => {
