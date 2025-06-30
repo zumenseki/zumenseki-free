@@ -78,27 +78,23 @@ const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
     return
   }
 
-  try {
-    // PDF.jsを動的にインポート
-const pdfjsLib = await import('pdfjs-dist')
+try {
+  // PDF.jsを動的にインポート
+  const pdfjsLib = await import('pdfjs-dist')
+  
+  // ワーカーの設定
+  // publicディレクトリにコピーしたpdf.worker.min.jsを参照
+  pdfjsLib.GlobalWorkerOptions.workerSrc = `/pdf.worker.min.js`
 
-// ワーカーの設定（より確実な方法）
-if (!pdfjsLib.GlobalWorkerOptions.workerSrc) {
-  pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
-    'pdfjs-dist/build/pdf.worker.min.js',
-    import.meta.url
-  ).toString()
+  const arrayBuffer = await file.arrayBuffer()
+  const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise
+  setPdfDoc(pdf)
+  setCurrentPage(1)
+  renderPage(pdf, 1)
+} catch (error) {
+  console.error('PDF読み込みエラー:', error)
 }
 
-    const arrayBuffer = await file.arrayBuffer()
-    const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise
-    setPdfDoc(pdf)
-    setCurrentPage(1)
-    renderPage(pdf, 1)
-  } catch (error) {
-    console.error('PDF読み込みエラー:', error)
-  }
-}
 
   // PDFページのレンダリング
   const renderPage = async (pdf: any, pageNum: number) => {
