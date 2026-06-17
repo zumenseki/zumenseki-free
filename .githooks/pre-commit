@@ -1,0 +1,27 @@
+#!/bin/sh
+# pre-commit — brain-vault のノートが変更されたとき INDEX を自動再生成してステージする。
+#
+# 有効化（クローンごとに1回）:  git config core.hooksPath .githooks
+# 無効化:                       git config --unset core.hooksPath
+
+# brain-vault 配下の .md がステージされているか（INDEX生成物・運用ファイルは除く）
+changed=$(git diff --cached --name-only --diff-filter=ACMR \
+  | grep '^brain-vault/.*\.md$' \
+  | grep -v '^brain-vault/00_INDEX/INDEX\.md$' \
+  | grep -v '\.gitkeep\.md$')
+
+[ -z "$changed" ] && exit 0
+
+if ! command -v node >/dev/null 2>&1; then
+  echo "pre-commit: node が無いため INDEX 再生成をスキップ（手動で 'node brain-vault/_tools/build-index.mjs' を実行）" >&2
+  exit 0
+fi
+
+echo "pre-commit: brain-vault のノート変更を検知 → INDEX を再生成"
+node brain-vault/_tools/build-index.mjs || {
+  echo "pre-commit: INDEX 再生成に失敗。コミットを中止します。" >&2
+  exit 1
+}
+
+git add brain-vault/00_INDEX/INDEX.md brain-vault/00_INDEX/index.json
+exit 0

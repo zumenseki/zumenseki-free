@@ -26,3 +26,15 @@ claude       # Claude Code（CLAUDE.md として AGENTS.md を参照させる設
 - **1ノート1概念**: 原子化して `[[リンク]]` で繋ぐ。
 
 詳細は `AGENTS.md` を参照。
+
+## INDEX の自動再生成（任意・推奨）
+
+ノートを足すたびに手で `node brain-vault/_tools/build-index.mjs` を叩くのが面倒なら、
+git の pre-commit フックで自動化できる。クローンごとに1回だけ有効化する：
+
+```bash
+git config core.hooksPath .githooks
+```
+
+以後 `brain-vault/` のノートをコミットすると、`00_INDEX/INDEX.md` と `index.json` が
+自動再生成されてコミットに含まれる（`.githooks/pre-commit`）。node が無い環境ではスキップされる。
