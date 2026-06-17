@@ -3,6 +3,8 @@ type: project
 project: 入札エージェント
 status: active
 tags: [入札, エージェント, 構想]
+aliases: [入札bot, 落札予測]
+keywords: [入札情報, 落札価格, スクレイピング, 積算, 数量拾い]
 updated: 2026-06-17
 ---
 

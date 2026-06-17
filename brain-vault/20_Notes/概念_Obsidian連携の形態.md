@@ -3,6 +3,8 @@ type: concept
 project: ズメンセキ
 status: active
 tags: [obsidian, エクスポート, 連携]
+aliases: [Obsidian連携, Markdownエクスポート]
+keywords: [obsidian://new, frontmatter, URIスキーム, クリップボード, Dataview]
 updated: 2026-06-17
 ---
 

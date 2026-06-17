@@ -3,6 +3,8 @@ type: concept
 project: ズメンセキ
 status: active
 tags: [アルゴリズム, 幾何, 面積]
+aliases: [靴ひも公式, ガウスの面積公式, shoelace formula]
+keywords: [多角形, 面積計算, 頂点座標, たすき掛け, px換算]
 updated: 2026-06-17
 ---
 

@@ -1,0 +1,258 @@
+{
+  "generated": "2026-06-17T22:27:37.177Z",
+  "records": [
+    {
+      "path": "00_INDEX/HOME.md",
+      "title": "🏠 HOME — 脳の入口",
+      "summary": "この脳（brain-vault）の入口。全プロジェクトの地図（MOC）への玄関。エージェントは作業前にまずここを読む。",
+      "type": "moc",
+      "project": "",
+      "status": "active",
+      "tags": [
+        "index",
+        "home"
+      ],
+      "aliases": [],
+      "keywords": [],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "00_INDEX/MOC_アイデア置き場.md",
+      "title": "🗺️ MOC — アイデア置き場（Inbox）",
+      "summary": "まだプロジェクト化していない着想のInbox。育ったら 10_Projects/ に昇格させMOCを作る。",
+      "type": "moc",
+      "project": "",
+      "status": "active",
+      "tags": [
+        "moc",
+        "idea",
+        "inbox"
+      ],
+      "aliases": [],
+      "keywords": [],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "30_Resources/研究_検索最速構造.md",
+      "title": "研究 — 検索が最速になる知識ベース構造",
+      "summary": "「エージェントが最速で検索できる知識ベース構造」を論文横断で調査した結論。単一の万能構造は無く、質問の種類でルーティングするのが最適。本Vaultの設計根拠。",
+      "type": "resource",
+      "project": "",
+      "status": "active",
+      "tags": [
+        "研究",
+        "検索",
+        "RAG",
+        "アーキテクチャ"
+      ],
+      "aliases": [
+        "検索最速構造",
+        "RAG調査"
+      ],
+      "keywords": [
+        "GraphRAG",
+        "RAPTOR",
+        "HNSW",
+        "BM25",
+        "RRF",
+        "MemGPT",
+        "A-MEM",
+        "Zettelkasten",
+        "progressive disclosure"
+      ],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "20_Notes/概念_Obsidian連携の形態.md",
+      "title": "概念 — ズメンセキの Obsidian 連携の形態",
+      "summary": "ズメンセキの測定結果をObsidianへ出す方法の比較。クライアント完結ゆえ「ファイル出力」か「URIスキーム起動」の2択。Markdown出力＋obsidian://併用が有力。",
+      "type": "concept",
+      "project": "ズメンセキ",
+      "status": "active",
+      "tags": [
+        "obsidian",
+        "エクスポート",
+        "連携"
+      ],
+      "aliases": [
+        "Obsidian連携",
+        "Markdownエクスポート"
+      ],
+      "keywords": [
+        "obsidian://new",
+        "frontmatter",
+        "URIスキーム",
+        "クリップボード",
+        "Dataview"
+      ],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "20_Notes/概念_Shoelace公式.md",
+      "title": "概念 — Shoelace（靴ひも）公式",
+      "summary": "多角形の頂点座標から面積を求める公式。ズメンセキの面積測定の中核。座標を順にたすき掛けして 1/2|Σ| で算出。",
+      "type": "concept",
+      "project": "ズメンセキ",
+      "status": "active",
+      "tags": [
+        "アルゴリズム",
+        "幾何",
+        "面積"
+      ],
+      "aliases": [
+        "靴ひも公式",
+        "ガウスの面積公式",
+        "shoelace formula"
+      ],
+      "keywords": [
+        "多角形",
+        "面積計算",
+        "頂点座標",
+        "たすき掛け",
+        "px換算"
+      ],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "10_Projects/ズメンセキ/決定ログ.md",
+      "title": "ズメンセキ — 決定ログ",
+      "summary": "ズメンセキの意思決定の追記ログ。新しい決定は下に1ブロック追記する（既存は消さない）。",
+      "type": "log",
+      "project": "ズメンセキ",
+      "status": "active",
+      "tags": [
+        "決定ログ",
+        "adr"
+      ],
+      "aliases": [],
+      "keywords": [],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "00_INDEX/MOC_ズメンセキ.md",
+      "title": "🗺️ MOC — ズメンセキ",
+      "summary": "ズメンセキ（PDF図面の面積/長さ測定ツール）の地図。仕様・設計・決定・関連概念のリンク集。",
+      "type": "moc",
+      "project": "ズメンセキ",
+      "status": "active",
+      "tags": [
+        "moc",
+        "面積測定"
+      ],
+      "aliases": [],
+      "keywords": [],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "10_Projects/ズメンセキ/_overview.md",
+      "title": "ズメンセキ — Overview",
+      "summary": "PDF図面の面積・長さをブラウザ上で測定するクライアント完結型ツール。Next.js+localStorage、サーバーなし。フリーミアムで長さ測定・履歴保存を有料化。",
+      "type": "project",
+      "project": "ズメンセキ",
+      "status": "active",
+      "tags": [
+        "面積測定",
+        "pdf",
+        "nextjs",
+        "freemium"
+      ],
+      "aliases": [
+        "zumenseki",
+        "図面測定ツール"
+      ],
+      "keywords": [
+        "PDF",
+        "canvas",
+        "pdfjs-dist",
+        "Shoelace",
+        "localStorage",
+        "面積",
+        "長さ",
+        "スケール"
+      ],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "10_Projects/ズメンセキ/フリーミアム設計.md",
+      "title": "ズメンセキ — フリーミアムモデル設計",
+      "summary": "ズメンセキの無料/有料の線引き。無料は「面積測定・1日3回・保存1件・5MBまで」。長さ測定・履歴保存・大容量は有料。",
+      "type": "project",
+      "project": "ズメンセキ",
+      "status": "active",
+      "tags": [
+        "freemium",
+        "収益",
+        "仕様"
+      ],
+      "aliases": [
+        "課金",
+        "有料版",
+        "アップグレード"
+      ],
+      "keywords": [
+        "UpgradeModal",
+        "測定回数",
+        "5MB",
+        "保存制限",
+        "プレミアム"
+      ],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "10_Projects/入札エージェント/決定ログ.md",
+      "title": "入札エージェント — 決定ログ",
+      "summary": "入札エージェントの意思決定ログ。新しい決定は下に1ブロック追記する（既存は消さない）。",
+      "type": "log",
+      "project": "入札エージェント",
+      "status": "active",
+      "tags": [
+        "決定ログ",
+        "adr"
+      ],
+      "aliases": [],
+      "keywords": [],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "00_INDEX/MOC_入札エージェント.md",
+      "title": "🗺️ MOC — 入札エージェント",
+      "summary": "入札エージェント（入札・落札予測を支援するAIエージェント）の地図。構想・仕様・決定のリンク集。",
+      "type": "moc",
+      "project": "入札エージェント",
+      "status": "active",
+      "tags": [
+        "moc",
+        "入札",
+        "エージェント"
+      ],
+      "aliases": [],
+      "keywords": [],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "10_Projects/入札エージェント/_overview.md",
+      "title": "入札エージェント — Overview",
+      "summary": "入札情報の収集・分析・落札予測を支援するAIエージェント構想。初期段階。要件と論点をここに集約していく。",
+      "type": "project",
+      "project": "入札エージェント",
+      "status": "active",
+      "tags": [
+        "入札",
+        "エージェント",
+        "構想"
+      ],
+      "aliases": [
+        "入札bot",
+        "落札予測"
+      ],
+      "keywords": [
+        "入札情報",
+        "落札価格",
+        "スクレイピング",
+        "積算",
+        "数量拾い"
+      ],
+      "updated": "2026-06-17"
+    }
+  ]
+}

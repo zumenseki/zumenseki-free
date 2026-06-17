@@ -3,6 +3,8 @@ type: project
 project: ズメンセキ
 status: active
 tags: [面積測定, pdf, nextjs, freemium]
+aliases: [zumenseki, 図面測定ツール]
+keywords: [PDF, canvas, pdfjs-dist, Shoelace, localStorage, 面積, 長さ, スケール]
 updated: 2026-06-17
 ---
 
