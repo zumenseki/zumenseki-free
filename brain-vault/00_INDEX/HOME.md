@@ -11,16 +11,24 @@ updated: 2026-06-17
 
 ## プロジェクト地図（MOC）
 
-- [[MOC_入札エージェント]] — 入札・落札予測のエージェント構想
+- [[MOC_統括]] — 全プロジェクト横断の上位レイヤー（ここから俯瞰）
+- [[MOC_会社]] — 会社・事業全体
 - [[MOC_ズメンセキ]] — PDF図面の面積/長さ測定ツール
+- [[MOC_入札エージェント]] — 公共入札の発見・予測・書類支援
+- [[MOC_JOJO's-company]] — JOJO's-company
+- [[MOC_動物実験から学ぶマネージメント理論]] — 動物行動を組織マネジメントに援用
 - [[MOC_アイデア置き場]] — まだプロジェクト化していない着想
 
 ## 進行中プロジェクト一覧
 
 | プロジェクト | 状態 | overview |
 |---|---|---|
-| ズメンセキ | active | [[_overview\|ズメンセキ overview]] → `10_Projects/ズメンセキ/_overview.md` |
-| 入札エージェント | active | `10_Projects/入札エージェント/_overview.md` |
+| 統括 | active | `10_Projects/統括/_overview.md` |
+| 会社 | active | `10_Projects/会社/_overview.md` |
+| ズメンセキ | active | `10_Projects/ズメンセキ/_overview.md` |
+| 入札エージェント | active（一部運用中） | `10_Projects/入札エージェント/_overview.md` |
+| JOJO's-company | active | `10_Projects/JOJO's-company/_overview.md` |
+| 動物実験から学ぶマネージメント理論 | active | `10_Projects/動物実験から学ぶマネージメント理論/_overview.md` |
 
 ## エージェントへの注意
 

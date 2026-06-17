@@ -1,6 +1,66 @@
 {
-  "generated": "2026-06-17T22:42:42.387Z",
+  "generated": "2026-06-17T23:01:48.846Z",
   "records": [
+    {
+      "path": "10_Projects/JOJO's-company/決定ログ.md",
+      "title": "JOJO's-company — 決定ログ",
+      "summary": "「JOJO's-company」の意思決定ログ。新しい決定は下に1ブロック追記する。",
+      "type": "log",
+      "project": "JOJO's-company",
+      "status": "active",
+      "tags": [
+        "決定ログ",
+        "adr"
+      ],
+      "aliases": [],
+      "keywords": [],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "00_INDEX/MOC_JOJO's-company.md",
+      "title": "🗺️ MOC — JOJO's-company",
+      "summary": "「JOJO's-company」プロジェクトの地図。中身はこれから流し込む。",
+      "type": "moc",
+      "project": "JOJO's-company",
+      "status": "active",
+      "tags": [
+        "moc",
+        "JOJO"
+      ],
+      "aliases": [
+        "JOJOs-company",
+        "ジョジョカンパニー"
+      ],
+      "keywords": [
+        "JOJO",
+        "company",
+        "事業",
+        "プロダクト"
+      ],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "10_Projects/JOJO's-company/_overview.md",
+      "title": "JOJO's-company — Overview",
+      "summary": "JOJO's-company プロジェクト。元フォルダ「JOJO's-company」の中身を移植する受け皿。（中身は未記入）",
+      "type": "project",
+      "project": "JOJO's-company",
+      "status": "active",
+      "tags": [
+        "JOJO"
+      ],
+      "aliases": [
+        "JOJOs-company",
+        "ジョジョカンパニー"
+      ],
+      "keywords": [
+        "JOJO",
+        "company",
+        "事業",
+        "プロダクト"
+      ],
+      "updated": "2026-06-17"
+    },
     {
       "path": "00_INDEX/HOME.md",
       "title": "🏠 HOME — 脳の入口",
@@ -199,6 +259,157 @@
       "updated": "2026-06-17"
     },
     {
+      "path": "10_Projects/会社/決定ログ.md",
+      "title": "会社 — 決定ログ",
+      "summary": "「会社」プロジェクトの意思決定ログ。新しい決定は下に1ブロック追記する。",
+      "type": "log",
+      "project": "会社",
+      "status": "active",
+      "tags": [
+        "決定ログ",
+        "adr"
+      ],
+      "aliases": [],
+      "keywords": [],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "00_INDEX/MOC_会社.md",
+      "title": "🗺️ MOC — 会社",
+      "summary": "「会社」プロジェクトの地図。事業・組織・経営に関するノートのハブ。中身はこれから流し込む。",
+      "type": "moc",
+      "project": "会社",
+      "status": "active",
+      "tags": [
+        "moc",
+        "経営",
+        "会社"
+      ],
+      "aliases": [
+        "company"
+      ],
+      "keywords": [
+        "会社",
+        "経営",
+        "事業",
+        "組織",
+        "戦略"
+      ],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "10_Projects/会社/_overview.md",
+      "title": "会社 — Overview",
+      "summary": "会社・事業全体に関するプロジェクト。元フォルダ「会社」の中身を移植する受け皿。（中身は未記入）",
+      "type": "project",
+      "project": "会社",
+      "status": "active",
+      "tags": [
+        "経営",
+        "会社"
+      ],
+      "aliases": [
+        "company"
+      ],
+      "keywords": [
+        "会社",
+        "経営",
+        "事業",
+        "組織",
+        "戦略",
+        "資金"
+      ],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "10_Projects/入札エージェント/書類作成支援.md",
+      "title": "書類作成支援",
+      "summary": "仕様書・図面・積算書から、公共入札の応募書類の作成・整理を支援する柱。ズメンセキ（図面→数量拾い）と接続できる。",
+      "type": "concept",
+      "project": "入札エージェント",
+      "status": "active",
+      "tags": [
+        "書類作成",
+        "積算",
+        "応募書類"
+      ],
+      "aliases": [
+        "応募書類作成",
+        "提出書類",
+        "入札書類"
+      ],
+      "keywords": [
+        "仕様書",
+        "図面",
+        "積算書",
+        "数量拾い",
+        "様式",
+        "テンプレート",
+        "チェックリスト",
+        "ズメンセキ"
+      ],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "10_Projects/入札エージェント/案件発見・選別.md",
+      "title": "案件発見・選別",
+      "summary": "官公庁の入札公告を収集し、業種・地域・規模・参加資格でフィルタして「勝てそうな案件」だけを通知する柱。一部運用中。",
+      "type": "concept",
+      "project": "入札エージェント",
+      "status": "active",
+      "tags": [
+        "案件発見",
+        "選別",
+        "公共入札"
+      ],
+      "aliases": [
+        "案件収集",
+        "入札情報収集",
+        "スクリーニング"
+      ],
+      "keywords": [
+        "公示",
+        "入札公告",
+        "NJSS",
+        "入札情報サービス",
+        "業種",
+        "地域",
+        "等級",
+        "通知",
+        "フィルタ"
+      ],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "10_Projects/入札エージェント/落札予測.md",
+      "title": "落札予測",
+      "summary": "過去の入札結果データから、案件ごとの落札価格レンジと自社の勝率を推定する柱。応札価格の意思決定を支援する。",
+      "type": "concept",
+      "project": "入札エージェント",
+      "status": "active",
+      "tags": [
+        "落札予測",
+        "勝率",
+        "価格"
+      ],
+      "aliases": [
+        "落札価格予測",
+        "勝率予測",
+        "応札価格"
+      ],
+      "keywords": [
+        "落札価格",
+        "予定価格",
+        "最低制限価格",
+        "入札結果",
+        "過去データ",
+        "回帰",
+        "勝率",
+        "競合"
+      ],
+      "updated": "2026-06-17"
+    },
+    {
       "path": "10_Projects/入札エージェント/決定ログ.md",
       "title": "入札エージェント — 決定ログ",
       "summary": "入札エージェントの意思決定ログ。新しい決定は下に1ブロック追記する（既存は消さない）。",
@@ -232,25 +443,166 @@
     {
       "path": "10_Projects/入札エージェント/_overview.md",
       "title": "入札エージェント — Overview",
-      "summary": "入札情報の収集・分析・落札予測を支援するAIエージェント構想。初期段階。要件と論点をここに集約していく。",
+      "summary": "官公庁の公共入札を対象に「案件の発見・選別／落札価格・勝率予測／応募書類の作成支援」を行うAIエージェント。一部すでに運用中。",
       "type": "project",
       "project": "入札エージェント",
       "status": "active",
       "tags": [
         "入札",
         "エージェント",
-        "構想"
+        "公共入札"
       ],
       "aliases": [
         "入札bot",
-        "落札予測"
+        "落札予測",
+        "官公庁入札"
       ],
       "keywords": [
-        "入札情報",
+        "公共入札",
+        "官公庁",
+        "案件発見",
         "落札価格",
-        "スクレイピング",
+        "勝率",
+        "応募書類",
         "積算",
-        "数量拾い"
+        "NJSS",
+        "入札情報サービス"
+      ],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "10_Projects/動物実験から学ぶマネージメント理論/決定ログ.md",
+      "title": "動物実験から学ぶマネージメント理論 — 決定ログ",
+      "summary": "「動物実験から学ぶマネージメント理論」の考察・更新ログ。新しい知見や適用判断を下に追記する。",
+      "type": "log",
+      "project": "動物実験から学ぶマネージメント理論",
+      "status": "active",
+      "tags": [
+        "決定ログ",
+        "adr"
+      ],
+      "aliases": [],
+      "keywords": [],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "00_INDEX/MOC_動物実験から学ぶマネージメント理論.md",
+      "title": "🗺️ MOC — 動物実験から学ぶマネージメント理論",
+      "summary": "「動物実験から学ぶマネージメント理論」の地図。動物の行動・群れの原理を組織マネジメントに援用する知見のハブ。",
+      "type": "moc",
+      "project": "動物実験から学ぶマネージメント理論",
+      "status": "active",
+      "tags": [
+        "moc",
+        "マネジメント",
+        "理論"
+      ],
+      "aliases": [
+        "動物実験マネジメント",
+        "動物行動マネジメント"
+      ],
+      "keywords": [
+        "動物実験",
+        "マネジメント",
+        "組織論",
+        "行動",
+        "群れ",
+        "リーダーシップ",
+        "インセンティブ"
+      ],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "10_Projects/動物実験から学ぶマネージメント理論/_overview.md",
+      "title": "動物実験から学ぶマネージメント理論 — Overview",
+      "summary": "動物実験・動物行動の知見を組織マネジメントに援用する理論プロジェクト。元フォルダの受け皿。（中身は未記入）",
+      "type": "project",
+      "project": "動物実験から学ぶマネージメント理論",
+      "status": "active",
+      "tags": [
+        "マネジメント",
+        "理論",
+        "組織論"
+      ],
+      "aliases": [
+        "動物実験マネジメント",
+        "動物行動マネジメント"
+      ],
+      "keywords": [
+        "動物実験",
+        "マネジメント",
+        "組織論",
+        "行動",
+        "群れ",
+        "リーダーシップ",
+        "インセンティブ",
+        "報酬設計"
+      ],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "10_Projects/統括/決定ログ.md",
+      "title": "統括 — 決定ログ",
+      "summary": "「統括」レイヤーの横断的意思決定ログ。新しい決定は下に1ブロック追記する。",
+      "type": "log",
+      "project": "統括",
+      "status": "active",
+      "tags": [
+        "決定ログ",
+        "adr"
+      ],
+      "aliases": [],
+      "keywords": [],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "00_INDEX/MOC_統括.md",
+      "title": "🗺️ MOC — 統括",
+      "summary": "「統括」プロジェクトの地図。全プロジェクトを横断して管理・優先順位づけする上位レイヤーのハブ。",
+      "type": "moc",
+      "project": "統括",
+      "status": "active",
+      "tags": [
+        "moc",
+        "統括",
+        "マネジメント"
+      ],
+      "aliases": [
+        "oversight",
+        "ガバナンス"
+      ],
+      "keywords": [
+        "統括",
+        "全体管理",
+        "横断",
+        "優先順位",
+        "進捗",
+        "マネジメント"
+      ],
+      "updated": "2026-06-17"
+    },
+    {
+      "path": "10_Projects/統括/_overview.md",
+      "title": "統括 — Overview",
+      "summary": "全プロジェクトを横断して管理・優先順位づけする上位レイヤー。元フォルダ「統括」の受け皿。（中身は未記入）",
+      "type": "project",
+      "project": "統括",
+      "status": "active",
+      "tags": [
+        "統括",
+        "マネジメント"
+      ],
+      "aliases": [
+        "oversight",
+        "ガバナンス"
+      ],
+      "keywords": [
+        "統括",
+        "全体管理",
+        "横断",
+        "優先順位",
+        "進捗",
+        "リソース配分"
       ],
       "updated": "2026-06-17"
     }
